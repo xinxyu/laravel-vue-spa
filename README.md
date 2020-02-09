@@ -1,6 +1,6 @@
 # Laravel and Vue SPA
 
-This is a guide on setting up a Single Page Application with user login, and roles using Laravel and Vue. This guide is a modification of the original guide [Create a SPA with role-based authentication with Laravel and Vue.js by Benoît Ripoche](https://medium.com/@ripoche.b/create-a-spa-with-role-based-authentication-with-laravel-and-vue-js-ac4b260b882f)
+This is a guide on setting up a Single Page Application with user login, and roles using Laravel 6 and Vue 2.6. This guide is a modification of the original guide [Create a SPA with role-based authentication with Laravel and Vue.js by Benoît Ripoche](https://medium.com/@ripoche.b/create-a-spa-with-role-based-authentication-with-laravel-and-vue-js-ac4b260b882f)
 
 ## Setting up Laravel
 Create a new project with Laravel and composer
@@ -954,3 +954,12 @@ Add the "resources/components/user-list.vue" file
         }
     }
     </script>
+
+
+## Moving to Production Server
+
+1. create a database in MySQL
+2. create the .env file
+3. update the .env file with APP_URL, MIX_APP_URL, database name, database password 
+4. composer install
+5. `php artisan jwt:secret`
